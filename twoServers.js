@@ -17,7 +17,7 @@ function serverResponse2( request, response ) {
 var server1 = http.createServer(serverResponse1); 
 var server2 = http.createServer(serverResponse2);
 
-//need to be able to listen in a server
+//need to be able to listen in a server -- note: callback is inline in this one versus above where we define outside and pass in -- line 9
 server1.listen(PORT1, function () {
 //when we start listening... do something when we start up the server
     console.log('server has been started, listening on: http://localhost:' + PORT1);
